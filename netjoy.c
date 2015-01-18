@@ -3,6 +3,18 @@
 
 char error_buffer[PCAP_ERRBUF_SIZE];
 
+void read_config() {
+    // fopen
+    // read line by line
+    // eliminate whitespace (tabs, spaces)
+    // skip comments and blank lines
+    // parse line
+    // switch directive
+        // set global var
+        // default error
+    // if error, exit
+}
+
 void packet_handler(unsigned char *param, const struct pcap_pkthdr *header, const unsigned char *pkt_data) {
     printf("Processed packet\n");
 }
